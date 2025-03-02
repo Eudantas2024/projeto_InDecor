@@ -1,0 +1,427 @@
+:root {
+    --main-color: #d92123;
+    --primary-text-color: #fff;
+    --secondary-text-color: #191919;
+    --secondary-color: #868686;
+    --tertiary-color: #eff3f4;
+    --secondary-bg-color: #5c1011;
+
+}
+
+* {                          /* reset para zerar as propriedades das paginas html */    
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    /**/   /* borda da caixa */    
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+
+}
+
+i {
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+/* main */
+
+#main {
+    background-color: black;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+#main .overlay-image {
+    background-image: url("../image/hrz-5.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; /* Define a opacidade da imagem */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#main .content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 30%
+    z-index: 1; /* Garante que o conteúdo fique acima da imagem */
+    padding: 2rem;
+    color: #eff3f4;
+}
+
+#indecor{
+    flex: 1;
+    padding-top: 12rem;
+    padding-left: 10.4rem;
+
+}
+
+#indecor .title{
+    text-align:left;
+    color: rgb(0, 187, 242);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+#indecor .subtitle {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-align:left;
+    font-weight: bold;
+    width: 250px;
+    padding-bottom: 2rem;
+}
+
+#indecor .dataevento{
+    padding-bottom: 0.2rem;
+
+}
+
+#indecor .data{
+    text-align:left;
+    color: rgb(0, 187, 242);
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+
+}
+
+
+
+#formulario{
+    flex: 1;
+    padding-top: 6rem;
+    padding-left: 4rem;
+   
+   
+}
+
+#formulario form{
+    width: 400px;
+    background-color: #868686;
+    color: black;
+    padding: 2rem;
+   
+}
+
+#formulario .form-control{
+    width: 100%;
+  
+  
+}
+#formulario .form-control .title{
+    font-size: 1.2rem;
+    font-weight:normal;
+}
+#formulario #form{
+    width: 100%;
+    border-color:transparent ;
+    padding: 1rem 0.2rem 0.1rem 0.2rem ;
+    border-radius: 4px;
+}
+#formulario #opcoes{
+    width: 100%;
+    padding: 1rem 0.2rem 0.1rem 0.2rem ;
+    border-color:transparent ;
+    border-radius: 4px;
+}
+
+.form-control p{
+    padding-top: 1rem;
+}
+
+#formulario .btn{
+    margin-top: 0.5rem;
+    width: 100%;
+    align-self: start;
+    background-color:  rgb(0, 187, 242);
+    border: 0;
+    color: white;
+    padding: 0.6rem 3rem 0.6rem 3rem;
+    font-size: 0.7rem;
+    transition: 0.5s;
+}
+
+#formulario .btn:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+
+/* sessão 2 */
+#aprender1{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0rem 2rem;
+    background-color: #868686;
+    font-size: 0.9rem;
+
+
+}
+#aprender{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 12rem;
+    justify-content: space-around;
+    margin:auto;
+    gap:1rem;
+
+    
+    
+}
+
+#aprender .foto{
+    flex: 1 1 30%;
+    
+}
+
+.foto img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.foto p{
+    width: 300px;
+    padding-right: 4.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: slategray;
+}
+
+/*  Sessão 3 */
+
+#black-box {
+    background-color: black;
+    width: 100%;
+    height: 45vh;
+    position: relative;
+}
+
+.overlay-image {
+    background-image: url("../image/hrz-1.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Define a opacidade da imagem */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima da imagem */
+    padding: 2rem;
+}
+
+.local{
+   
+    display: flex;
+}
+
+.local2{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.local2 i{
+    background-color: transparent;
+    font-size: 3rem;
+    color: rgb(0, 187, 242);
+    padding: 1rem
+}
+
+.local2 p {
+    color: #eff3f4; /* Define a cor do texto */
+    font-size: 1.2rem;
+    
+    padding: 1rem 2rem;
+}
+
+.local3{
+   
+    color: #fff;
+    
+    margin: 0;
+        
+    padding-top: 4rem;
+    padding-right: 7rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem; 
+}
+
+.local3 h2{
+    text-align:left;
+    color: rgb(0, 187, 242);
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  
+}
+
+.local3 p{
+    margin: 0;
+    padding: 0rem;
+    font-size: 0.9rem;
+    width: 500px;
+    text-align:left;
+}
+
+.endereco p{
+    margin: 0;
+    padding:0;
+}
+
+
+/* sessao 4 */
+#promo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    /* Centraliza horizontalmente */
+    margin-top: 60px;
+    
+}
+#promo img{
+    width: 550px;
+}
+#promo .lado-esquerdo{
+    flex: 1;
+    margin-top: 1px;
+    
+    
+}
+#promo .lado-direito{
+    flex: 1;
+    margin-top: 1px;
+    
+}
+
+#promo .lado-direito .a{
+    width: 500px  
+      
+}
+#promo .lado-direito .a h2{
+    font-size: 2.5rem;  
+}
+#promo .a .b{
+    margin-top: 0.1rem;
+}
+.b h3{
+    font-size: 2rem;
+}
+ul {
+    margin-top: 1px;
+    padding-top: 1rem;
+    list-style-type: disc; /* Define o tipo de marcador */
+    padding-left: 20px; /* Adiciona um pouco de espaço antes dos itens */
+}
+
+ul .bold{
+    font-weight: bold;
+
+}
+
+li {
+    margin-bottom: 5px; /* Adiciona um pouco de espaço entre os itens */
+}
+
+/* sessão 7 */
+
+#contact {
+    background-color: black;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 60px;
+}
+    
+
+#contact .overlay-image {
+    background-image: url("../image/hrz-6.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Define a opacidade da imagem */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#contact #contact-information {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima da imagem */
+   
+    color: #eff3f4;
+    
+    
+}
+
+#contact-information .inscreva {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact-information .inscreva .gostou{
+    padding-bottom: 2rem;
+}
+
+
+#contact-information .btn{
+    justify-content: center;
+    align-self: start;
+    border: 0px solid rgb(0, 107, 242);
+    background-color: rgb(0, 187, 242);
+    padding: 1rem 6rem 1rem 6rem;
+    color:white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#contact-information .btn:hover{
+    background-color: rgb(13, 8, 152);
+    color: white;
+}
+
+footer{
+    background-color:#191919;
+    color: white;
+    font-size: 0.7rem;
+    padding: 3rem 3rem 3rem 3rem;
+
+}
+
